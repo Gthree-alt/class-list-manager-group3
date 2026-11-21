@@ -10,36 +10,35 @@ names = ["Sara", "Noura", "Lama", "Reem", "Amal", "Lama"]
 def count_names(names):
     return len(names)
 
-#Written by: ATYAF-ALANAZI (Task 6)
+
+# Written by: ATYAF-ALANAZI (Task 6)
 def to_upper(names):
     return [name.upper() for name in names]
 
-#Written by: Danah-Alamro (Task 7)
+
+# Written by: Danah-Alamro (Task 7)
 def count_vowels(name):
-vowels = "aeiou"
-count = 0
-for letter in name.lower():
-    if letter in vowels:
-        count += 1
+    vowels = "aeiou"
+    count = 0
+    for letter in name.lower():
+        if letter in vowels:
+            count += 1
+    return count
 
-return count
 
-#Written by: Deema-Almanea (Task 2)
-def search_name(names,name):
+# Written by: Deema-Almanea (Task 2)
+def search_name(names, name):
     return name in names
-    
+
+
 def main():
     print("Welcome to the Class List Manager!")
     print("Class list:", names)
     print("Number of names:", count_names(names))
     print("Names in uppercase:", to_upper(names))
     for name in names:
-    print(name, count_vowels(name))
-    
+        print(name, count_vowels(name))
     print("Search For Sara:", search_name(names, "Sara"))
- 
-    # Each student calls her function here, for example:
-    # print("Number of names:", count_names(names))
 
 
 main()
