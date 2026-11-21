@@ -24,6 +24,10 @@ for letter in name.lower():
 
 return count
 
+#Written by: Deema-Almanea (Task 2)
+def search_name(names,name):
+    return name in names
+    
 def main():
     print("Welcome to the Class List Manager!")
     print("Class list:", names)
@@ -32,7 +36,7 @@ def main():
     for name in names:
     print(name, count_vowels(name))
     
-
+    print("Search For Sara:", search_name(names, "Sara"))
  
     # Each student calls her function here, for example:
     # print("Number of names:", count_names(names))
